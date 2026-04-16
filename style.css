@@ -1,0 +1,102 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body Styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #191818;
+}
+
+/* Main Container */
+.container {
+    background: #f7f3f3;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+/* Heading */
+.container h1 {
+    margin-bottom: 10px;
+    
+    color: #0a0a0a;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+/* Input Section */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input Box */
+#city-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Button */
+#get-weather-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #161616;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#get-weather-btn:hover {
+    background: #cc581e;
+    transform: scale(1.05);
+}
+
+/* Weather Info Box */
+#weather-info {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.2);
+    color: #698bb7;
+}
+
+/* Error Message */
+#error-message {
+    color: #ff4d4d;
+    margin-top: 10px;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+    color: #fd0505;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
+
+img{
+    border-radius:50px;
+    
+}
